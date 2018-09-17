@@ -10,7 +10,6 @@ export default class Cell extends Component {
     }
   }
 
-
   clicker = () => {
     this.setState({
       color: '#333'
@@ -20,8 +19,8 @@ export default class Cell extends Component {
   render(){
     return (
       <div
-        className="cell" s
-        tyle={{backgroundColor: '#FFF'}}
+        className="cell"
+        style={{backgroundColor: this.state.color}}
         onClick={this.clicker}>
       </div>
     )
